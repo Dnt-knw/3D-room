@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+html,
+body {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Quicksand", sans-serif;
+}
+
+#c {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  filter: blur(12px);
+  transition: filter 300ms ease;
+}
+
+.main-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: black;
+  transition: opacity 500ms ease-in-out;
+}
+
+.loading-container {
+  position: absolute;
+  max-width: 1200px;
+  margin: 0;
+  width: 80%;
+  height: auto;
+  min-width: 120px;
+  padding: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loader {
+  background: #383838;
+  width: 100%;
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.loader-part {
+  transform: scaleX(0);
+  background: #2c82e5;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  transform-origin: left;
+  transition: transform 500ms ease-out;
+}
+
+#progress-status {
+  position: absolute;
+  top: calc(50% - 10px);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 18px;
+  text-align: center;
+  color: antiquewhite;
+  font-size: 14px;
+  z-index: 9999;
+}
+
+#loaded-items-number {
+  position: relative;
+  color: antiquewhite;
+  text-align: center;
+  top: 0;
+  left: 0;
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 300px) {
+  #progress-status {
+    top: calc(50% - 8px);
+    font-size: 12px;
+  }
+
+  .loader {
+    height: 30px;
+  }
+
+  #loaded-items-number {
+    font-size: 11px;
+  }
+}
