@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <title>3D Room...</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
 
     <!--
 		Loading can take some time, so be patient.
@@ -105,7 +105,7 @@
 		const fov = 75;
 		const aspect = w / h;
 		const near = 1;
-		const far = 1000;
+		const far = 400;
 
 		const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
 		camera.position.set(10, 30, 90);
@@ -187,7 +187,7 @@
 			light.target.position.set(30, 0, 0);
 			light.castShadow = light.receiveShadow = true;
 			light.shadow.mapSize.set(1536, 1536);
-			light.shadow.bias = -0.000032;
+			light.shadow.normalBias = 0.1;
 			scene.add(light);
 			scene.add(light.target);
 		}
@@ -369,27 +369,27 @@
 			new THREE.MeshPhongMaterial({
 				map: wallLeftAndRightSideTex,
 				shininess: 0,
-				side: THREE.BackSide
+				side: THREE.DoubleSide
 			}),
 			new THREE.MeshPhongMaterial({
 				map: wallLeftAndRightSideTex,
 				shininess: 0,
-				side: THREE.BackSide
+				side: THREE.DoubleSide
 			}),
 			new THREE.MeshBasicMaterial({
 				map: ceilingTex,
-				color: 0x262626,
+				color: 0x202021,
 				side: THREE.DoubleSide
 			}),
 			new THREE.MeshPhongMaterial({
 				map: floorTex,
 				shininess: 0,
-				side: THREE.BackSide
+				side: THREE.DoubleSide
 			}),
 			new THREE.MeshPhongMaterial({
 				map: roomBackSideTex,
 				shininess: 0,
-				side: THREE.BackSide
+				side: THREE.DoubleSide
 			}),
 			new THREE.MeshPhongMaterial({
 				map: roomBackSideTex,
@@ -403,7 +403,7 @@
 			new THREE.PlaneBufferGeometry(70, 70),
 			new THREE.MeshPhongMaterial({
 				map: roomFrontSideTex1,
-				side: THREE.FrontSide
+				side: THREE.DoubleSide
 			}), 60, 35, -125,
 			0, 0, 0, 1, 1, 1, false, true
 		);
@@ -412,7 +412,7 @@
 			new THREE.PlaneBufferGeometry(40, 70),
 			new THREE.MeshPhongMaterial({
 				map: roomFrontSideTex2,
-				side: THREE.FrontSide
+				side: THREE.DoubleSide
 			}), -15, 35, -125,
 			0, 0, 0, 1, 1, 1, false, true
 		);
