@@ -171,7 +171,7 @@
     	};
 
     	{
-    		const light = new THREE.SpotLight(0xFFFFFF, .25, 250, PI / 2, 0);
+    		const light = new THREE.SpotLight(0xFFFFFF, .3, 250, PI / 2, 0);
     		light.position.set(30, 70, 0);
     		light.target.position.set(30, 0, 0);
     		scene.add(light);
@@ -179,7 +179,7 @@
     	}
 
     	{
-    		const light = new THREE.SpotLight(0xFFFFFF, 1.25, 250, PI / 2.7, .75);
+    		const light = new THREE.SpotLight(0xFFFFFF, 1.2, 250, PI / 2.7, .75);
     		light.position.set(30, 70, 0);
     		light.target.position.set(30, 0, 0);
     		light.castShadow = light.receiveShadow = true;
@@ -373,7 +373,7 @@
     		}),
     		new THREE.MeshBasicMaterial({
     			map: ceilingTex,
-    			color: 0x202021,
+    			color: 0x282828,
     			side: THREE.DoubleSide
     		}),
     		new THREE.MeshPhongMaterial({
@@ -397,12 +397,12 @@
     	const roomBasicMats = [
     		new THREE.MeshBasicMaterial({
     			map: wallLeftAndRightSideTex,
-    			color: 0x202021,
+    			color: 0x282828,
     			side: THREE.FrontSide
     		}),
     		new THREE.MeshBasicMaterial({
     			map: wallLeftAndRightSideTex,
-    			color: 0x202021,
+    			color: 0x282828,
     			side: THREE.FrontSide
     		}),
     		new THREE.MeshBasicMaterial({
@@ -410,12 +410,12 @@
     		}),
     		new THREE.MeshBasicMaterial({
     			map: ceilingTex,
-    			color: 0x202021,
+    			color: 0x282828,
     			side: THREE.FrontSide
     		}),
     		new THREE.MeshBasicMaterial({
     			map: roomBackSideTex,
-    			color: 0x202021,
+    			color: 0x282828,
     			side: THREE.FrontSide,
     		}),
     		new THREE.MeshBasicMaterial({
