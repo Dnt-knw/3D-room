@@ -17,8 +17,8 @@
 ***
 
 ### Usage
-    ◼️ Hold down left mouse button to rotate this scene on PC / Laptop
-    ◼️ Hold down right mouse button to drag this scene on PC / Laptop
-    ◼️ Use mouse wheel to change distance to this scene on PC / Laptop
-    ◼️ Use 1 finger to rotate this scene on mobile
-    ◼️ Use 2 fingers to bring closer / move away from this scene on mobile    
+    ◼️ Hold down left mouse button to rotate this room on PC / Laptop
+    ◼️ Hold down right mouse button to drag this room on PC / Laptop
+    ◼️ Use mouse wheel to change distance to this room on PC / Laptop
+    ◼️ Use 1 finger to rotate this room on mobile
+    ◼️ Use 2 fingers to bring closer / move away from this room on mobile    
