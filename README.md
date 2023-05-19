@@ -1,4 +1,4 @@
-# 3D-room 🚪
+# 3D room 🚪
 
 > Сozy room with sweets on the table 🎂🍩
 
