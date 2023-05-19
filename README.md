@@ -19,7 +19,7 @@
 - 📜 Painting on the wall
 - 📜 Plant
 
-## Usage
+## Usage ⌨️
 
 - Hold down left mouse button 🖱 to rotate this room on PC 🖥 / Laptop 💻
 - Hold down right mouse button 🖱 to drag this room on PC 🖥 / Laptop 💻
